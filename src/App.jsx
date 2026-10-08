@@ -5,10 +5,10 @@ import {
   Navigate
 } from "react-router-dom";
 
-import Login from "./Pages.jsx/Login";
-import Home from "./Pages.jsx/Home";
-import Quiz_questions from "./Pages.jsx/Quiz_questions";
-import Result from "./Pages.jsx/Result";
+import Login from "./pages/Login";
+import Home from "./pages/Home";
+import Quiz from "./pages/Quiz";
+import Result from "./pages/Result";
 
 function ProtectedRoute({ children }) {
   const email = localStorage.getItem("email");
@@ -40,7 +40,7 @@ function App() {
           path="/quiz/:level"
           element={
             <ProtectedRoute>
-              <Quiz_questions />
+              <Quiz />
             </ProtectedRoute>
           }
         />

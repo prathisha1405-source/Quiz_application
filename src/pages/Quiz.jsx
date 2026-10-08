@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { questions } from "../data/question";
 import "../App.css";
 
-function Quiz_questions() {
+function Quiz() {
 
   const { level } = useParams();
 
@@ -313,4 +313,4 @@ function Quiz_questions() {
   );
 }
 
-export default Quiz_questions;
+export default Quiz;
