@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { questions } from "../data/Question";
+import {Quiz_questions} from "../data/Quiz_questions"
 import "../App.css";
 
 function Quiz() {
@@ -11,7 +11,7 @@ function Quiz() {
 
   // Filter questions according to level
 
-  const filteredQuestions = questions.filter(
+  const filteredQuestions = Quiz_questions.filter(
     (q) => q.level.toLowerCase() === level.toLowerCase()
   );
 
